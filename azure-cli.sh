@@ -12,3 +12,5 @@ cd db && sudo kubectl create -f permissoes.yaml
 
 #Faremos o mesmo procedimento com os outros arquivos de ambos os diretórios "app" e "db".
 #Feito isso, podemos já verificar quais são os pods que estão rodando no cluster por meio de kubectl get pods. Como resultado, teremos:
+
+sudo kubectl get services
