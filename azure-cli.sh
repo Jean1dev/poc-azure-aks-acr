@@ -14,3 +14,9 @@ cd db && sudo kubectl create -f permissoes.yaml
 #Feito isso, podemos já verificar quais são os pods que estão rodando no cluster por meio de kubectl get pods. Como resultado, teremos:
 
 sudo kubectl get services
+
+#dentro do cluster kubernetes
+kubectl create secret docker-registry alurasportsregistry.secret --docker-server alurasportsregistry.azurecr.io --docker-username alurasportsregistry --docker-password G5pbPw5KYCXUcIMQnXEW57HD/x81zymY -docker-email alura.guicosta@outlook.com
+
+#atualizar arquivo kubectl
+kubectl apply -f ${pathArquivo}

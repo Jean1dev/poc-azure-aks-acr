@@ -15,3 +15,5 @@ spec:
           value: "root"
         - name: MYSQL_ALLOW_EMPTY_PASSWORD
           value: "1"
+  imagePullSecrets:
+    - name: nomeregistry.secret
